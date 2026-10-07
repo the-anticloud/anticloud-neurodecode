@@ -1,0 +1,1118 @@
+{
+ "schema": "anticloud.tier-bench/1",
+ "project": "NEURODECODE",
+ "source": {
+  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\BRAIN_COMPUTER_INTERFACE\\NEURODECODE\\UPSTREAM_CLONE",
+  "git": {
+   "head": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE",
+   "url": "https://github.com/the-anticloud/OPENMRS_CORE.git",
+   "branch": "master",
+   "committed_at": "2026-09-29T11:06:59+04:00",
+   "sha_verified_from": "local clone .git file read (no .git dir in clone)"
+  }
+ },
+ "metrics": {
+  "files_total": 2699,
+  "source_files_scanned": 1199,
+  "lines_of_code": 433056,
+  "languages": {
+   ".py": 1194,
+   ".md": 749,
+   ".json": 731,
+   ".swift": 8,
+   "(none)": 7,
+   ".toml": 2,
+   ".snapshot": 2,
+   ".sh": 2,
+   ".yaml": 2,
+   ".cff": 1,
+   ".xlsx": 1
+  }
+ },
+ "licence": {
+  "spdx": "Apache-2.0",
+  "class": "A",
+  "source_file": "LICENSE",
+  "redistribution_allowed": true
+ },
+ "dependencies": {
+  "count": 0,
+  "unique": 0,
+  "by_ecosystem": {},
+  "list": []
+ },
+ "owasp_top10": {
+  "total_findings": 145,
+  "files_with_findings": 134,
+  "severity": {
+   "high": 22,
+   "medium": 96,
+   "low": 27
+  },
+  "categories": {
+   "A01-BrokenAccessControl": {
+    "count": 0,
+    "findings": []
+   },
+   "A02-CryptographicFailures": {
+    "count": 94,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_stage_a_implementation_record.py",
+      "line": 13,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_stage_a_redirect_recovery_authorization_decision.py",
+      "line": 16,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_stage_a_redirect_recovery_implementation_activation.py",
+      "line": 25,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_stage_a_redirect_recovery_implementation_record.py",
+      "line": 16,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_stage_a_redirect_recovery_request.py",
+      "line": 16,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_stage_a_redirect_recovery_request_proof.py",
+      "line": 13,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_current_research_frontier_v27.py",
+      "line": 16,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1("
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_dreyer_c5r_1_stage_h_live_preflight_decision.py",
+      "line": 24,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode() + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_dreyer_c5r_1_stage_h_live_recovery_qualification_result.py",
+      "line": 22,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_metadata_authorization_decision.py",
+      "line": 14,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_metadata_implementation.py",
+      "line": 16,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_source_acquisition_authorization_decision.py",
+      "line": 23,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_source_acquisition_implementation.py",
+      "line": 16,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode(\"ascii\") + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_end_to_end_activation_checkpoint_blocker_result.py",
+      "line": 19,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1("
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_end_to_end_real_experiment_authorization_request.py",
+      "line": 17,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1("
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_admission_generated_qualification_proof.py",
+      "line": 17,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(prefix + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_discovery_authorization_decision.py",
+      "line": 72,
+      "cwe": "CWE-327",
+      "snippet": "hashlib.sha1(git_blob_payload, usedforsecurity=False).hexdigest(),"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_discovery_implementation_proof.py",
+      "line": 42,
+      "cwe": "CWE-327",
+      "snippet": "blob = hashlib.sha1(blob_payload, usedforsecurity=False).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_identity_witness_generated_record.py",
+      "line": 17,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode() + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_identity_witness_implementation_decision.py",
+      "line": 22,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode() + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_identity_witness_live_implementation_proof.py",
+      "line": 21,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(header + payload, usedforsecurity=False).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_identity_witness_live_implementation_record.py",
+      "line": 40,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(header + payload).hexdigest()  # noqa: S324 - Git identity"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_research_registration_proof.py",
+      "line": 91,
+      "cwe": "CWE-327",
+      "snippet": "hashlib.sha1(git_blob_payload, usedforsecurity=False).hexdigest(),"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_iackd_channel_role_geometry_authorization_decision.py",
+      "line": 23,
+      "cwe": "CWE-327",
+      "snippet": "return hashlib.sha1(f\"blob {len(payload)}\\0\".encode() + payload).hexdigest()"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_iackd_cue_action_acquisition.py",
+      "line": 43,
+      "cwe": "CWE-327",
+      "snippet": "\"etag\": hashlib.md5(payload).hexdigest(),  # noqa: S324 - generated fixture ID"
+     }
+    ]
+   },
+   "A03-Injection": {
+    "count": 20,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tests/test_causal_motor_lattice_synthetic.py",
+      "line": 127,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_local_precision_runtime_gate.py",
+      "line": 65,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_precision_candidates.py",
+      "line": 29,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_speech_reference.py",
+      "line": 145,
+      "cwe": "CWE-95",
+      "snippet": "model = reference.build_reference_eegnet().eval()"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_tiny_causal_sentence_ctc.py",
+      "line": 31,
+      "cwe": "CWE-95",
+      "snippet": "candidate.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/models/precision_candidates.py",
+      "line": 139,
+      "cwe": "CWE-95",
+      "snippet": "self.model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/models/speech_reference.py",
+      "line": 194,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/models/timesfm_word_features.py",
+      "line": 46,
+      "cwe": "CWE-95",
+      "snippet": "model.eval().requires_grad_(False)"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/models/tiny_causal_encoder.py",
+      "line": 315,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/models/tiny_causal_sentence_ctc.py",
+      "line": 214,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/models/tiny_causal_temporal_ctc.py",
+      "line": 272,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/models/tiny_conv_baseline.py",
+      "line": 196,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/models/tiny_ctc.py",
+      "line": 915,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/experiments/areeg_local_words.py",
+      "line": 209,
+      "cwe": "CWE-95",
+      "snippet": "f\"(allow process-exec (literal {q(python)}))\","
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/experiments/causal_motor_lattice_synthetic.py",
+      "line": 742,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/experiments/eegmmidb_smr_d1.py",
+      "line": 102,
+      "cwe": "CWE-95",
+      "snippet": "f\"(allow process-exec (literal {quote(python)}))\","
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/experiments/timesfm_words.py",
+      "line": 543,
+      "cwe": "CWE-95",
+      "snippet": "f\"(allow process-exec (literal {q(py)}))\","
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/experiments/train_only_failure_discrimination_gate.py",
+      "line": 1310,
+      "cwe": "CWE-95",
+      "snippet": "model.eval()"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/experiments/word_recording_diagnostic.py",
+      "line": 364,
+      "cwe": "CWE-95",
+      "snippet": "f\"(allow process-exec (literal {q(py)}))\","
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/experiments/word_timing_diagnostic.py",
+      "line": 305,
+      "cwe": "CWE-95",
+      "snippet": "f\"(allow process-exec (literal {q(py)}))\","
+     }
+    ]
+   },
+   "A04-InsecureDesign": {
+    "count": 0,
+    "findings": []
+   },
+   "A05-SecurityMisconfiguration": {
+    "count": 0,
+    "findings": []
+   },
+   "A06-VulnerableComponents": {
+    "count": 1,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/test_physionet_low_frequency_cohort_confirmation_implementation.py",
+      "line": 92,
+      "cwe": "CWE-1104",
+      "snippet": "\"numpy==2.5.2\","
+     }
+    ]
+   },
+   "A07-AuthFailures": {
+    "count": 2,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tests/test_foundation_model_live.py",
+      "line": 147,
+      "cwe": "CWE-798",
+      "snippet": "api_key=\"test-secret-never-serialize\","
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/datasets/marc2_generated_diagnostic_relay.py",
+      "line": 385,
+      "cwe": "CWE-798",
+      "snippet": "token = \"sub-01_ses-01_task-freewill_run-01\""
+     }
+    ]
+   },
+   "A08-SoftwareDataIntegrity": {
+    "count": 18,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/test_eegmmidb_unseen_participant_metadata.py",
+      "line": 167,
+      "cwe": "CWE-319",
+      "snippet": "\"http://physionet.org/files/eegmmidb/1.0.0/S001/S001R04.edf\","
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_iackd_transport_stable.py",
+      "line": 44,
+      "cwe": "CWE-",
+      "snippet": "def _spec(body: bytes, *, etag: str | None = None) -> ResponseSpec:"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_kunz_reference_qualification.py",
+      "line": 207,
+      "cwe": "CWE-319",
+      "snippet": "for target in (\"http://example.test/archive.zip\", \"https://user:secret@example.test/a\"):"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/preprocess/iackd_channel_roles.py",
+      "line": 229,
+      "cwe": "CWE-",
+      "snippet": "etag: str,"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/preprocess/iackd_header_inventory.py",
+      "line": 183,
+      "cwe": "CWE-",
+      "snippet": "etag: str,"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/experiments/iackd_role_aware_dual_reversal.py",
+      "line": 112,
+      "cwe": "CWE-",
+      "snippet": "etag: str"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/experiments/iackd_role_aware_dual_reversal_real.py",
+      "line": 146,
+      "cwe": "CWE-",
+      "snippet": "etag: str,"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/experiments/iackd_transport_stable_dual_reversal_real.py",
+      "line": 158,
+      "cwe": "CWE-",
+      "snippet": "etag: str,"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/eegmmidb_unseen_participant_metadata.py",
+      "line": 94,
+      "cwe": "CWE-",
+      "snippet": "etag: str | None"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/eegmmidb_unseen_participant_source_acquisition.py",
+      "line": 133,
+      "cwe": "CWE-",
+      "snippet": "etag: str"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/fresh_motor_source_identity_witness.py",
+      "line": 1451,
+      "cwe": "CWE-319",
+      "snippet": "lambda: canonicalize_continuation_url(packet, generic_root, generic_root.url, \"http://nemar.org/search?q=x&page=2\"),"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/iackd_cue_action_acquisition.py",
+      "line": 871,
+      "cwe": "CWE-319",
+      "snippet": "'<ListBucketResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\">'"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/iackd_snapshot_identity.py",
+      "line": 917,
+      "cwe": "CWE-319",
+      "snippet": "checks[\"non_HTTPS_alternate_host_bucket_or_key_mismatch\"] = lambda: canonicalize_generated_response(_mutated(base, lambda value: _first_file(value).__setitem__(\"urls\", [\"http://exa"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/iackd_transport_stable.py",
+      "line": 133,
+      "cwe": "CWE-",
+      "snippet": "expected_etag: str | None = None"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/marc1_central_directory_audit.py",
+      "line": 1481,
+      "cwe": "CWE-319",
+      "snippet": "headers={\"Content-Length\": \"1\", \"Location\": \"http://127.0.0.1/x\"},"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/marc1_source_aware_inventory_attestation.py",
+      "line": 1153,
+      "cwe": "CWE-319",
+      "snippet": "\"HTTP_download_URL\": \"http://ndownloader.figshare.com/files/62570743\","
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/physionet_low_frequency_acquisition.py",
+      "line": 727,
+      "cwe": "CWE-319",
+      "snippet": "f\"<ListBucketResult xmlns=\\\"http://s3.amazonaws.com/doc/2006-03-01/\\\">\""
+     },
+     {
+      "severity": "low",
+      "file": "products/quiet-signal/build.sh",
+      "line": 19,
+      "cwe": "CWE-319",
+      "snippet": "<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">"
+     }
+    ]
+   },
+   "A09-LoggingMonitoringFailures": {
+    "count": 0,
+    "findings": []
+   },
+   "A10-SSRF": {
+    "count": 10,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/test_eegmmidb_unseen_participant_metadata.py",
+      "line": 229,
+      "cwe": "CWE-601",
+      "snippet": "def test_standard_library_transport_is_tls_verified_and_no_redirect(self) -> None:"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_fresh_motor_source_research_v1.py",
+      "line": 279,
+      "cwe": "CWE-601",
+      "snippet": "def allow_unchecked_intermediate_redirect(contract: dict[str, object]) -> None:"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_inner_speech_session2_acquisition.py",
+      "line": 127,
+      "cwe": "CWE-601",
+      "snippet": "def redirect(path, *args, **kwargs):"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_marc1_http_identity_live.py",
+      "line": 291,
+      "cwe": "CWE-601",
+      "snippet": "def test_transport_refuses_overflow_duplicate_framing_and_private_redirect(self) -> None:"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_marc1_pilot_selection_live.py",
+      "line": 242,
+      "cwe": "CWE-601",
+      "snippet": "def test_transport_refuses_overflow_duplicate_framing_and_private_redirect(self) -> None:"
+     },
+     {
+      "severity": "medium",
+      "file": "src/neurodecodekit/experiments/areeg_local_words.py",
+      "line": 65,
+      "cwe": "CWE-918",
+      "snippet": "def curl(url, path, size_cap):"
+     },
+     {
+      "severity": "medium",
+      "file": "src/neurodecodekit/experiments/timesfm_words.py",
+      "line": 70,
+      "cwe": "CWE-918",
+      "snippet": "def fetch(url, path, cap):"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/fresh_motor_source_admission.py",
+      "line": 2015,
+      "cwe": "CWE-601",
+      "snippet": "def mutate_redirect(value: dict[str, object]) -> None:"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/marc1_http_identity_live.py",
+      "line": 1644,
+      "cwe": "CWE-601",
+      "snippet": "def private_redirect() -> Any:"
+     },
+     {
+      "severity": "low",
+      "file": "src/neurodecodekit/datasets/marc1_pilot_selection_live.py",
+      "line": 1531,
+      "cwe": "CWE-601",
+      "snippet": "def private_redirect() -> Any:"
+     }
+    ]
+   }
+  }
+ },
+ "owasp_llm_top10": {
+  "total_findings": 225,
+  "files_with_findings": 210,
+  "severity": {
+   "high": 6,
+   "medium": 94,
+   "low": 125
+  },
+  "categories": {
+   "LLM01-PromptInjection": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM02-SensitiveInfoDisclosure": {
+    "count": 6,
+    "findings": [
+     {
+      "severity": "high",
+      "file": "tests/test_comm_g2_generated_proof_implementation.py",
+      "line": 204,
+      "cwe": "CWE-798",
+      "snippet": "self.assertNotIn(\"OPENAI_API_KEY\", environment)"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_comm_p0_generated_runner.py",
+      "line": 51,
+      "cwe": "CWE-798",
+      "snippet": "\"OPENAI_API_KEY\": \"must-not-cross\","
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_foundation_model_live_smoke_authorization.py",
+      "line": 70,
+      "cwe": "CWE-798",
+      "snippet": "\"read `OPENAI_API_KEY` once\","
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_foundation_model_live_smoke_contract.py",
+      "line": 88,
+      "cwe": "CWE-798",
+      "snippet": "self.assertEqual(privacy[\"credential_environment_variable\"], \"OPENAI_API_KEY\")"
+     },
+     {
+      "severity": "high",
+      "file": "tests/test_marc2_selection_sufficiency_private_cohort_freeze_surface.py",
+      "line": 68,
+      "cwe": "CWE-798",
+      "snippet": "self.assertNotIn(\"OPENAI_API_KEY\", self.source)"
+     },
+     {
+      "severity": "high",
+      "file": "src/neurodecodekit/evaluation/foundation_model_live.py",
+      "line": 43,
+      "cwe": "CWE-798",
+      "snippet": "API_KEY_ENVIRONMENT_VARIABLE = \"OPENAI_API_KEY\""
+     }
+    ]
+   },
+   "LLM03-SupplyChain": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM04-DataPoisoning": {
+    "count": 94,
+    "findings": [
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_artifact_postmortem.py",
+      "line": 30,
+      "cwe": "CWE-20",
+      "snippet": "cls.stage_t = json.loads(INPUT_PATH.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_cross_participant_eeg_gain_authorization_request.py",
+      "line": 16,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_cross_participant_eeg_gain_stage_g1_recovery_authorization_decision.py",
+      "line": 18,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_cross_participant_eeg_gain_stage_g1_recovery_request.py",
+      "line": 14,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text())"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_bnci_2014_001_stage_a_redirect_recovery_request.py",
+      "line": 22,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_causal_preprocessing_contract.py",
+      "line": 33,
+      "cwe": "CWE-20",
+      "snippet": "cls.rw3_request = json.loads(RW3_REQUEST_PATH.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_communication_eeg_source_identity_metadata_authorization_request.py",
+      "line": 24,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_current_research_frontier_v21.py",
+      "line": 16,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_dreyer_c5r_1_stage_h_l2_fixed_header_activation_authorization_request.py",
+      "line": 24,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_dreyer_c5r_1_stage_h_live_preflight_authorization_request.py",
+      "line": 23,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST_PATH.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_dreyer_c5r_1_stage_h_live_preflight_decision.py",
+      "line": 31,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST_PATH.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_dreyer_c5r_1_stage_h_live_recovery.py",
+      "line": 66,
+      "cwe": "CWE-20",
+      "snippet": "request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_dreyer_c5r_1_stage_h_live_recovery_authorization_request.py",
+      "line": 17,
+      "cwe": "CWE-20",
+      "snippet": "return json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_dreyer_c5r_1_stage_h_live_recovery_qualification_authorization_request.py",
+      "line": 19,
+      "cwe": "CWE-20",
+      "snippet": "return json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_generalization_authorization_request.py",
+      "line": 17,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_metadata_authorization_decision.py",
+      "line": 20,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_metadata_authorization_request.py",
+      "line": 19,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_source_acquisition_authorization_decision.py",
+      "line": 31,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_eegmmidb_unseen_participant_source_acquisition_authorization_request.py",
+      "line": 24,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_discovery_authorization_request.py",
+      "line": 18,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_fresh_motor_source_identity_witness_authorization_request.py",
+      "line": 17,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_iackd_channel_role_geometry_authorization_decision.py",
+      "line": 30,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST_PATH.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_iackd_channel_role_geometry_authorization_request.py",
+      "line": 29,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST_PATH.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_iackd_cue_action_dissociation_authorization_decision.py",
+      "line": 45,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST_PATH.read_text(encoding=\"utf-8\"))"
+     },
+     {
+      "severity": "medium",
+      "file": "tests/test_iackd_cue_action_dissociation_authorization_request.py",
+      "line": 20,
+      "cwe": "CWE-20",
+      "snippet": "cls.request = json.loads(REQUEST_PATH.read_text(encoding=\"utf-8\"))"
+     }
+    ]
+   },
+   "LLM05-ImproperOutputHandling": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM06-ExcessiveAgency": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM07-SystemPromptLeak": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM08-VectorEmbeddingWeaknesses": {
+    "count": 0,
+    "findings": []
+   },
+   "LLM09-Misinformation": {
+    "count": 125,
+    "findings": [
+     {
+      "severity": "low",
+      "file": "tests/test_bnci_2014_001_cross_participant_eeg_gain_request_proof.py",
+      "line": 49,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"focused_BNCI_tests\"], 28)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_bnci_2014_001_cross_participant_eeg_gain_stage_g1_recovery_authorization_decision.py",
+      "line": 118,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(measurements[\"GitHub_CI_verification_calls\"], 1)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_bnci_2014_001_cross_participant_eeg_gain_stage_g1_recovery_request_proof.py",
+      "line": 56,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"proof_closeout_full_base_tests\"], 5_976)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_bnci_2014_001_cross_participant_eeg_gain_stage_g1_result_proof.py",
+      "line": 70,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(operations[\"GitHub_CI_verification_calls\"], 1)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_bnci_2014_001_stage_a_implementation_record.py",
+      "line": 50,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"network_requests\"], 0)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_bnci_2014_001_stage_a_redirect_recovery_result.py",
+      "line": 56,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"focused_BNCI_tests_passed\"], 140)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_bnci_2014_001_stage_q_result.py",
+      "line": 103,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"focused_Stage_Q_tests_passed\"], 52)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_classical_eeg_adapter_implementation.py",
+      "line": 69,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"preimplementation_complete_tests_passed\"], 1255)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_classical_eeg_adapter_result.py",
+      "line": 89,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"result_receipt_tests_passed\"], 6)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_communication_eeg_objective_evidence_and_replication_decision.py",
+      "line": 134,
+      "cwe": "CWE-",
+      "snippet": "self.assertFalse(kara[\"separate_oral_EMG_verified\"])"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_communication_eeg_prospective_generated_qualification_amendment_3.py",
+      "line": 38,
+      "cwe": "CWE-",
+      "snippet": "assert architecture[\"producer_and_verifier_aggregate_scores_must_match\"] is True"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_communication_eeg_prospective_generated_single_execution_dual_verification_amendment_1.py",
+      "line": 43,
+      "cwe": "CWE-",
+      "snippet": "assert schedule[\"verifier_invocations\"] == 1"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_communication_eeg_prospective_generated_single_execution_dual_verification_contract.py",
+      "line": 60,
+      "cwe": "CWE-",
+      "snippet": "assert producer[\"freeze_durable_and_verified_before_target_delivery\"] is True"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_communication_eeg_scientific_claim_program.py",
+      "line": 92,
+      "cwe": "CWE-",
+      "snippet": "self.assertTrue(kara[\"verified_EOG\"])"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_comm_p0_generated_dual_verification.py",
+      "line": 224,
+      "cwe": "CWE-",
+      "snippet": "assert result[\"isolated_verifier_replays\"] == 2"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_comm_p0_generated_dual_verification_rehearsal.py",
+      "line": 211,
+      "cwe": "CWE-",
+      "snippet": "assert plan[\"independent_verifier_scorer_schedule\"]["
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_comm_p0_generated_qualification.py",
+      "line": 544,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verified, [True])"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_contact_aware_ear_channel_implementation.py",
+      "line": 65,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"preimplementation_complete_tests_passed\"], 1286)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_contact_aware_ear_channel_result.py",
+      "line": 112,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(verification[\"result_receipt_tests_passed\"], 6)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_current_research_frontier.py",
+      "line": 493,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(decision[\"fresh_CI_verification_calls\"], 1)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_current_research_frontier_v1.py",
+      "line": 501,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(decision[\"fresh_CI_verification_calls\"], 1)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_dreyer_c5r_1_stage_h_l2_fixed_header_activation_authorization_request.py",
+      "line": 72,
+      "cwe": "CWE-",
+      "snippet": "self.assertTrue(transport[\"verified_TLS\"])"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_dreyer_c5r_1_stage_h_l2_fixed_header_activation_decision.py",
+      "line": 50,
+      "cwe": "CWE-",
+      "snippet": "assert proof[\"fresh_verification_calls\"] == 1"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_dreyer_c5r_1_stage_h_l2_fixed_header_activation_request_proof.py",
+      "line": 62,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(operations[\"GitHub_CI_verification_calls\"], 1)"
+     },
+     {
+      "severity": "low",
+      "file": "tests/test_dreyer_c5r_1_stage_h_live_preflight_decision.py",
+      "line": 66,
+      "cwe": "CWE-",
+      "snippet": "self.assertEqual(proof[\"fresh_verification_calls\"], 1)"
+     }
+    ]
+   },
+   "LLM10-UnboundedConsumption": {
+    "count": 0,
+    "findings": []
+   }
+  }
+ },
+ "sbom": {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:3cf99580-9c1d-595f-98a8-362fbbaedbf8",
+  "version": 1,
+  "metadata": {
+   "timestamp": "2026-10-06T09:21:16Z",
+   "component": {
+    "type": "application",
+    "name": "NEURODECODE",
+    "version": "83b357604d34",
+    "bom-ref": "pkg:generic/anticloud/NEURODECODE@83b357604d34",
+    "purl": "pkg:generic/anticloud/NEURODECODE@83b357604d34",
+    "licenses": [
+     {
+      "license": {
+       "id": "Apache-2.0"
+      }
+     }
+    ]
+   },
+   "properties": [
+    {
+     "name": "anticloud:source-commit",
+     "value": "REMOVED_CONTAMINATED_SHA_PENDING_API_RESOLVE"
+    },
+    {
+     "name": "anticloud:source-url",
+     "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+    },
+    {
+     "name": "anticloud:tier",
+     "value": "tier-agent"
+    }
+   ]
+  },
+  "components": []
+ },
+ "elapsed_seconds": 151.06
+}
