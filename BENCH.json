@@ -540,10 +540,10 @@
  "version": "1.0.0",
  "source": {
   "git": {
-   "head": "4e3be772f557b07ea8d4e220b1e3fe5e60d883cb",
-   "url": "https://github.com/CheickDiakite-yikes/neurodecodekit",
-   "branch": "main",
-   "sha_verified_from": "GitHub API commits/main"
+   "url": "https://github.com/dbdq/neurodecode",
+   "head": "8071d0975910c23b8339b2660e822c68e9cd6f1f",
+   "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
+   "previous_substitute": "https://github.com/CheickDiakite-yikes/neurodecodekit"
   }
  }
 }
